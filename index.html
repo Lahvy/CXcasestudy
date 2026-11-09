@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#002D62">
+  <meta name="description" content="CX case study: Nákup ojetého auta. Pětislidová interaktivní prezentace o klientských potřebách, ekosystému ČSOB a validaci konceptů.">
+  <meta property="og:title" content="Nákup ojetého auta | CX Case Study">
+  <meta property="og:description" content="Od první úvahy k informovanému rozhodnutí. CX design, ekosystém a testování hypotéz.">
+  <meta property="og:type" content="website">
+  <title>Nákup ojetého auta · CX case study</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#presentation">Přejít na prezentaci</a>
+  <div class="app-shell">
+    <header class="app-bar" aria-label="Hlavička prezentace">
+      <a href="#slide-1" class="app-brand" aria-label="Zpět na první slide">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>CX / EKOSFÉRA</strong><small>Case study · nákup ojetého auta</small></span>
+      </a>
+      <div class="app-bar-right">
+        <span class="live-chip"><span class="live-dot"></span> INTERAKTIVNÍ PREZENTACE</span>
+        <button class="top-action" type="button" id="aboutBtn" aria-haspopup="dialog" aria-controls="aboutDialog" title="Metodika a použití AI">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 10.5v6M12 7.5h.01" stroke-linecap="round"/></svg>
+          <span>O projektu &amp; AI</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="presentation" class="presentation" aria-label="Pětislidová prezentace">
+      <div id="slideViewport" class="slide-viewport">
+        <div class="slide-deck" id="slideDeck">
+
+          <!-- SLIDE 01 -->
+          <section class="slide slide--one is-active" data-slide="1" aria-label="Slide 1 z 5: Jak bych postupoval?" aria-hidden="false">
+            <div class="slide-inner">
+              <div class="slide-watermark slide-watermark--one" aria-hidden="true"></div>
+              <header class="slide-heading">
+                <div class="kicker"><span class="kicker-line"></span> NÁKUP OJETÉHO AUTA <span class="kicker-separator">/</span> CX CASE STUDY</div>
+                <div class="slide-counter" aria-label="Slide 1">01</div>
+                <h1>Jak bych <span class="accent">postupoval?</span></h1>
+                <p class="slide-subtitle">Od pochopení problému k ověřené klientské hodnotě.</p>
+              </header>
+
+              <div class="process-grid" aria-label="Pět kroků návrhového procesu">
+                <article class="process-card">
+                  <div class="process-card-top"><span class="process-icon"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16M9 4v8m6 0v8"/></svg></span><span class="step-num">01</span></div>
+                  <h2>ALIGN</h2><p class="process-caption">Ujasnit problém</p>
+                  <ul><li>Refinement zadání a scope</li><li>Sladění stakeholderů</li><li>Klient × business × feasibility</li><li>Společná kritéria úspěchu</li></ul>
+                </article>
+                <article class="process-card">
+                  <div class="process-card-top"><span class="process-icon"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5M8 10.5h5"/></svg></span><span class="step-num">02</span></div>
+                  <h2>DISCOVER</h2><p class="process-caption">Otevřít možnosti</p>
+                  <ul><li>Desk &amp; AI deep research</li><li>Benchmark a existující služby</li><li>Data, výzkum, signály potřeb</li><li>Divergence</li></ul>
+                </article>
+                <article class="process-card process-card--focus">
+                  <div class="process-card-top"><span class="process-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16l-6.5 7v6l-3 2v-8z"/></svg></span><span class="step-num">03</span></div>
+                  <h2>DEFINE</h2><p class="process-caption">Vybrat směr</p>
+                  <ul><li>Situace a archetypy</li><li>Journey, pain points, JTBD</li><li>HMW, framing</li><li>Konvergence a priority</li></ul>
+                </article>
+                <article class="process-card">
+                  <div class="process-card-top"><span class="process-icon"><svg viewBox="0 0 24 24"><path d="M9 18h6m-5 3h4m-7-10a5 5 0 1 1 10 0c0 2-1.5 3.2-2.5 4.5-.3.4-.5.8-.5 1.5h-4c0-.7-.2-1.1-.5-1.5C8.5 14.2 7 13 7 11Z"/></svg></span><span class="step-num">04</span></div>
+                  <h2>IDEATE</h2><p class="process-caption">Navrhnout možnosti</p>
+                  <ul><li>Společná ideace</li><li>Banka × partneři × ekosystém</li><li>Klientská × business hodnota</li><li>Koncepty a priority</li></ul>
+                </article>
+                <article class="process-card">
+                  <div class="process-card-top"><span class="process-icon"><svg viewBox="0 0 24 24"><path d="M4 12 9 17 20 6"/></svg></span><span class="step-num">05</span></div>
+                  <h2>VALIDATE</h2><p class="process-caption">Učit se včas</p>
+                  <ul><li>Hypotézy a experimenty</li><li>Kvalita × kvantita</li><li>Rozhodnutí o investici</li><li>Iterate / Scale / Stop</li></ul>
+                </article>
+              </div>
+
+              <div class="slide-one-bottom">
+                <div class="working-rail"><span class="rail-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20v-2a5.5 5.5 0 0 1 11 0v2M14 20v-1.5a4 4 0 0 1 7.5-2"/></svg></span><div><strong>Tým a stakeholdeři</strong><small>Workshopy · průběžné sladění · společné rozhodování a buy-in</small></div></div>
+                <div class="working-rail"><span class="rail-icon rail-icon--cyan"><svg viewBox="0 0 24 24"><path d="m12 2 2.2 6.5L21 11l-6.8 2.5L12 20l-2.2-6.5L3 11l6.8-2.5z"/></svg></span><div><strong>AI jako sparring partner</strong><small>Rešerše · strukturování · ideace · kritická oponentura, ne náhrada týmu</small></div></div>
+              </div>
+              <footer class="slide-footer"><span>Pracovní hypotézy → ověřit s klienty, týmem a daty.</span><span>STRATEGIE · DESIGN · VALIDACE</span></footer>
+            </div>
+            <template class="speaker-template">
+              <h2>01 · Jak bych postupoval?</h2>
+              <p><strong>Hlavní sdělení:</strong> Nezačínám funkcionalitou. Nejdříve potřebuji pochopit, co znamená úspěch pro klienta, pro banku a pro její partnery.</p>
+              <ul>
+                <li><strong>ALIGN:</strong> cíle nemusí být stejné: banka může chtít vhodné financování a pojištění, leasing prodat vozy, DoKapsy užitečnost a návraty, klient bezproblémový nákup. Srovnat očekávání a stanovit hranice.</li>
+                <li><strong>DISCOVER:</strong> interní data, existující služby ČSOB, stakeholder rozhovory, klientský výzkum, benchmark a AI deep research. Odlišit ověřené informace od hypotéz.</li>
+                <li><strong>DEFINE:</strong> nákupní situace, behaviorální archetypy, end-to-end journey, pain points, JTBD, HMW. Zúžit priority a určit, do čeho banka nemá vstupovat.</li>
+                <li><strong>IDEATE:</strong> rozvíjet příležitosti společně s týmem, ne izolovaně. Workshopy s core týmem a stakeholdery, průběžné statusy a rozhodovací body. Tím vzniká buy-in.</li>
+                <li><strong>VALIDATE:</strong> rychlé, ale kvalitní testy. Nevyvíjet složité integrace bez důkazu hodnoty.</li>
+              </ul>
+              <p><strong>AI transparentně:</strong> Poskytl jsem jí kontext zadání, role i svého profilu. Použil ji pro rešerši, další úhly pohledu a oponenturu. AI nenahrazuje reálné zákaznické poznatky ani týmovou spolupráci.</p>
+              <p><strong>Poznámka:</strong> Předložené archetypy, journey i koncepty jsou pracovní hypotézy. Nejsou to výsledky uskutečněného výzkumu.</p>
+            </template>
+          </section>
+
+          <!-- SLIDE 02 -->
+          <section class="slide slide--two" data-slide="2" aria-label="Slide 2 z 5: Proč lidé kupují ojeté auto?" aria-hidden="true">
+            <div class="slide-inner">
+              <header class="slide-heading slide-heading--tight">
+                <div class="kicker"><span class="kicker-line"></span> POCHOPENÍ KLIENTA</div>
+                <div class="slide-counter" aria-label="Slide 2">02</div>
+                <h1>Proč lidé kupují <span class="accent">ojeté auto?</span></h1>
+                <p class="slide-subtitle">Různé situace a zkušenosti. Podobná potřeba rozhodnout se správně.</p>
+              </header>
+
+              <div class="motivation-grid">
+                <article class="motivation-panel">
+                  <div class="panel-caption"><span class="small-icon">01</span><div><h2>Nákupní situace</h2><p>Proč auto kupuji?</p></div></div>
+                  <div class="motivation-list">
+                    <div class="motivation-item"><span class="item-glyph">A</span><div><strong>První auto</strong><span>Nová zkušenost, neznámé prostředí</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph">B</span><div><strong>Druhé auto do rodiny</strong><span>Nové potřeby a rozpočet</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph">C</span><div><strong>Náhrada dosluhujícího</strong><span>Spolehlivost a časový tlak</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph">D</span><div><strong>Plánovaná obměna</strong><span>Poměr hodnoty a ceny</span></div></div>
+                  </div>
+                </article>
+                <div class="motivation-bridge" aria-hidden="true"><span>×</span></div>
+                <article class="motivation-panel motivation-panel--right">
+                  <div class="panel-caption"><span class="small-icon small-icon--cyan">02</span><div><h2>Behaviorální archetypy</h2><p>Jak se rozhoduji?</p></div></div>
+                  <div class="motivation-list">
+                    <div class="motivation-item"><span class="item-glyph item-glyph--cyan">N</span><div><strong>Nováček</strong><span>„Nevím, kde začít.“</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph item-glyph--cyan">P</span><div><strong>Pragmatik</strong><span>„Chci rozumnou koupi.“</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph item-glyph--cyan">E</span><div><strong>Nadšenec</strong><span>„Vím, co hledám.“</span></div></div>
+                    <div class="motivation-item"><span class="item-glyph item-glyph--cyan">?</span><div><strong>Nejistý kupující</strong><span>„Jak poznám, že nenaletím?“</span></div></div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="jobs-area">
+                <div class="jobs-title"><span class="mini-upper">SPOLEČNÉ JOBS TO BE DONE</span><strong>Co se klient snaží vyřešit?</strong></div>
+                <div class="jobs-pills"><span>Správné auto</span><span>Realistický rozpočet</span><span>Porovnání možností</span><span>Prověřený stav</span><span>Jistota rozhodnutí</span></div>
+              </div>
+              <div class="signal-strip"><span class="signal-label"><svg viewBox="0 0 24 24"><path d="M3 18v-5l6-3 4 3 8-7M17 6h4v4"/></svg> PRVNÍ SIGNÁLY</span><span>Změna životní situace</span><i></i><span>Hledání rad</span><i></i><span>Rozpočet</span><i></i><span>Termín nákupu</span></div>
+              <footer class="slide-footer"><span>Archetypy jsou pracovní hypotézy k ověření, ne hotová segmentace.</span><span>INSIGHT → PŘÍLEŽITOST</span></footer>
+            </div>
+            <template class="speaker-template">
+              <h2>02 · Proč lidé kupují ojeté auto?</h2>
+              <p><strong>Dvě nezávislé dimenze:</strong> nákupní situace popisuje, proč klient nakupuje. Behaviorální archetyp popisuje, jak se rozhoduje a jakou má jistotu či zkušenost.</p>
+              <p>Například nadšenec může kupovat druhé rodinné auto a člověk kupující sedmé vozidlo může být stále nejistý v technickém stavu.</p>
+              <ul>
+                <li><strong>JTBD:</strong> nejde primárně o úvěr. Klient chce učinit správné rozhodnutí s přijatelným rizikem, úsilím a finanční zátěží.</li>
+                <li><strong>Rozpočet:</strong> myslet na pořizovací cenu, rezervu a budoucí náklady. Nevytvářet předpoklad, že si klient chce půjčit.</li>
+                <li><strong>Signály:</strong> primárně deklarovaný záměr, uložený plán, dobrovolně sdílený rozpočet či vybraný vůz. Automatické profilování z transakcí není samozřejmost a vyžaduje právní a etické posouzení.</li>
+                <li><strong>Výzkum:</strong> před výběrem, ve fázi hledání i krátce po nákupu; zohlednit stávající klienty i potenciální neklienty.</li>
+              </ul>
+              <p>Jedná se o model pro první výzkumné rozhovory, nikoli o výsledky empirické segmentace.</p>
+            </template>
+          </section>
+
+          <!-- SLIDE 03 -->
+          <section class="slide slide--three" data-slide="3" aria-label="Slide 3 z 5: Customer journey" aria-hidden="true">
+            <div class="slide-inner">
+              <header class="slide-heading slide-heading--tight">
+                <div class="kicker"><span class="kicker-line"></span> CUSTOMER JOURNEY <span class="kicker-separator">/</span> END-TO-END POHLED</div>
+                <div class="slide-counter" aria-label="Slide 3">03</div>
+                <h1>Kde může banka <span class="accent">přinést hodnotu?</span></h1>
+                <p class="slide-subtitle">Zaměřit se na začátek rozhodování. Rozumět ale celé nákupní cestě.</p>
+              </header>
+              <div class="journey-legend"><span><b class="legend-dot legend-dot--cyan"></b> Prioritní prostor pro inovaci</span><span><b class="legend-dot legend-dot--gray"></b> Návaznost existujících služeb</span><span class="loop-label"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-14-5M4 4v4h4M4 12a8 8 0 0 0 14 5m2 3v-4h-4"/></svg> Cesta není lineární</span></div>
+              <div class="journey-track" aria-label="Pět fází nákupní cesty">
+                <article class="journey-step journey-step--focus">
+                  <div class="journey-top"><span>01</span><span class="journey-marker"></span></div>
+                  <h2>Impuls</h2><p class="journey-question">„Potřebuji jiné auto?“</p>
+                  <div class="journey-detail"><span>POTŘEBA</span><strong>Orientace</strong></div>
+                  <div class="journey-detail journey-detail--pain"><span>BARIÉRA</span><strong>Nejasný záměr</strong></div>
+                  <div class="journey-opportunity"><span>PŘÍLEŽITOST</span><strong>Včas poznat potřebu</strong></div>
+                </article>
+                <article class="journey-step journey-step--focus">
+                  <div class="journey-top"><span>02</span><span class="journey-marker"></span></div>
+                  <h2>Plánování</h2><p class="journey-question">„Co potřebuji a kolik?“</p>
+                  <div class="journey-detail"><span>POTŘEBA</span><strong>Kritéria, rozpočet</strong></div>
+                  <div class="journey-detail journey-detail--pain"><span>BARIÉRA</span><strong>Nejistota, chaos</strong></div>
+                  <div class="journey-opportunity"><span>PŘÍLEŽITOST</span><strong>Průvodce a plán</strong></div>
+                </article>
+                <article class="journey-step journey-step--focus">
+                  <div class="journey-top"><span>03</span><span class="journey-marker"></span></div>
+                  <h2>Hledání</h2><p class="journey-question">„Které auto vybrat?“</p>
+                  <div class="journey-detail"><span>POTŘEBA</span><strong>Porovnání alternativ</strong></div>
+                  <div class="journey-detail journey-detail--pain"><span>BARIÉRA</span><strong>Roztříštěné nabídky</strong></div>
+                  <div class="journey-opportunity"><span>PŘÍLEŽITOST</span><strong>Shortlist a checklist</strong></div>
+                </article>
+                <article class="journey-step journey-step--focus">
+                  <div class="journey-top"><span>04</span><span class="journey-marker"></span></div>
+                  <h2>Prověření</h2><p class="journey-question">„Je to dobrá koupě?“</p>
+                  <div class="journey-detail"><span>POTŘEBA</span><strong>Historie a stav</strong></div>
+                  <div class="journey-detail journey-detail--pain"><span>BARIÉRA</span><strong>Skryté vady</strong></div>
+                  <div class="journey-opportunity"><span>PŘÍLEŽITOST</span><strong>Důvěryhodný partner</strong></div>
+                </article>
+                <article class="journey-step journey-step--last">
+                  <div class="journey-top"><span>05</span><span class="journey-marker"></span></div>
+                  <h2>Nákup</h2><p class="journey-question">„Jak vše dokončit?“</p>
+                  <div class="journey-detail"><span>POTŘEBA</span><strong>Platba, smlouva</strong></div>
+                  <div class="journey-detail journey-detail--pain"><span>BARIÉRA</span><strong>Administrativa</strong></div>
+                  <div class="journey-opportunity journey-opportunity--soft"><span>PŘÍLEŽITOST</span><strong>Finance a pojištění</strong></div>
+                </article>
+              </div>
+              <div class="journey-bottom">
+                <div class="priority-wrap"><span class="mini-upper">TŘI PRIORITY</span><div class="priority-items"><span><b>1</b> Orientace a finanční připravenost</span><span><b>2</b> Důvěryhodný výběr</span><span><b>3</b> Plynulá návaznost</span></div></div>
+                <div class="not-do"><span class="mini-upper">KAM NEVSTUPOVAT</span><strong>Další univerzální autobazar ani vlastní síť inspekcí.</strong></div>
+              </div>
+              <div class="hmw-banner"><span>HOW MIGHT WE</span><strong>Jak snížit nejistotu klienta dříve, než ví, který produkt potřebuje?</strong></div>
+              <footer class="slide-footer"><span>Pracovní journey k ověření. Výběr, finance i hledání se mohou prolínat.</span><span>PRIORITIZACE → FOCUS</span></footer>
+            </div>
+            <template class="speaker-template">
+              <h2>03 · Customer journey a priority</h2>
+              <p><strong>Hlavní myšlenka:</strong> Rozumím celé cestě, ale těžištěm řešení je její první část, kde banka typicky přichází pozdě.</p>
+              <ul>
+                <li><strong>Impuls:</strong> potřeba může vzniknout změnou rodinné situace, poruchou auta či plánovanou obměnou. Výzkum má odhalit typické spouštěče.</li>
+                <li><strong>Plánování:</strong> nejprve skutečná potřeba a finanční připravenost. Financování může klient zvažovat už zde, ne pouze na konci.</li>
+                <li><strong>Hledání:</strong> příležitost v osobním seznamu vyhlédnutých vozidel ze Sauto, jiných portálů i ČSOB Leasing. Nemusíme vytvořit další inzertní tržiště.</li>
+                <li><strong>Prověření:</strong> historická data, VIN, mechanická kontrola mohou zajistit specialisté. ČSOB Leasing už nabízí prověřené zánovní vozy s doložitelnou historií a protokoly DEKRA.</li>
+                <li><strong>Nákup:</strong> návaznost na bezpečné dokončení, vhodné financování a pojištění, bez agresivního cross-sellu.</li>
+              </ul>
+              <p><strong>HMW:</strong> Jak klientovi snížit nejistotu dříve, než ví, který bankovní produkt potřebuje?</p>
+              <p><strong>Do čeho nevstupovat:</strong> univerzální inzertní portál a vlastní síť technických inspekcí. Hodnotu mají specialisté a partneři. Moje garáž pro následný provoz je až budoucí vize, nikoli v rozsahu současné case study.</p>
+            </template>
+          </section>
+
+          <!-- SLIDE 04 -->
+          <section class="slide slide--four" data-slide="4" aria-label="Slide 4 z 5: Dvě příležitosti pro ekosystém" aria-hidden="true">
+            <div class="slide-inner slide-inner--four">
+              <header class="slide-heading slide-heading--four">
+                <div class="kicker"><span class="kicker-line"></span> NÁVRH KONCEPTŮ <span class="kicker-separator">/</span> EKOSYSTÉM</div>
+                <div class="slide-counter" aria-label="Slide 4">04</div>
+                <h1>Dvě příležitosti. <span class="accent">Jeden ekosystém.</span></h1>
+                <p class="slide-subtitle">Nezáleží na jedné aplikaci. Záleží na jedné navazující klientské cestě.</p>
+              </header>
+              <div class="channel-rail"><span class="channel-label">JEDEN KLIENTSKÝ KONTEXT</span><div class="channel-path"><span>Veřejný web</span><b>↔</b><span>Uložený plán</span><b>↔</b><span>DoKapsy</span><b>↔</b><span>ČSOB Smart</span><b>↔</b><span>Partneři</span></div><button type="button" class="flow-link" id="flowBtn" aria-haspopup="dialog" aria-controls="flowDialog">Jak propojit? <span aria-hidden="true">↗</span></button></div>
+              <div class="concepts-grid">
+                <article class="concept concept--now">
+                  <div class="concept-heading"><span class="concept-letter">A</span><span class="concept-badge">OVĚŘIT NYNÍ</span></div>
+                  <h2>Průvodce nákupem</h2><p class="concept-tagline">Od první úvahy k informované koupi.</p>
+                  <div class="concept-content">
+                    <div class="concept-section"><h3>PRO KLIENTA</h3><ul><li>Checklist, rady a nákupní rozpočet</li><li><strong>Můj výběr aut:</strong> odkazy ze Sauto i ČSOB Leasing</li><li>Porovnání kandidátů a vlastní poznámky</li><li>Prověření historie / odborný partner</li><li>Uložený plán a další kroky</li></ul></div>
+                    <div class="concept-section"><h3>PRO ČSOB</h3><ul><li>Včasný a dobrovolně sdílený záměr</li><li>Návaznost na leasing a partnery</li><li>Finance a pojištění ve správný moment</li></ul></div>
+                  </div>
+                  <div class="concept-bottom"><span class="concept-rule">POMOC PRVNÍ. PRODUKT VE SPRÁVNÝ MOMENT.</span></div>
+                </article>
+                <article class="concept concept--future">
+                  <div class="concept-heading"><span class="concept-letter">B</span><span class="concept-badge concept-badge--dark">BUDOUCÍ VIZE</span></div>
+                  <h2>Moje garáž</h2><p class="concept-tagline">Dlouhodobá relevance nad rámec nákupu.</p>
+                  <div class="concept-content">
+                    <div class="concept-section"><h3>PRO KLIENTA</h3><ul><li>Přehled vlastního vozidla</li><li>Připomínky STK, servisu a pojištění</li><li>Důležité termíny a dokumenty</li><li>Jednoduché notifikace</li><li>Návaznost na budoucí obměnu auta</li></ul></div>
+                    <div class="concept-section"><h3>PRO ČSOB</h3><ul><li>Přirozený důvod k návratu</li><li>Dlouhodobější vztah a kontext</li><li>Příležitost pomoci při příštím nákupu</li></ul></div>
+                  </div>
+                  <div class="concept-bottom"><span class="concept-rule">UŽITEČNOST DNES. RELEVANCE V BUDOUCNU.</span></div>
+                </article>
+              </div>
+              <div class="concept-warning"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 4h.01M4 20h16L12 4 4 20Z"/></svg><span><strong>Důležitý rozdíl:</strong> Ukládání odkazů je jednoduché MVP. Automatická synchronizace účtů Sauto či dalších služeb vyžaduje partnerství, API a souhlasy.</span></div>
+              <footer class="slide-footer"><span>Koncept B záměrně přesahuje zadání. Prioritou pro testování je A.</span><span>JEDNA CESTA · VÍCE KANÁLŮ</span></footer>
+            </div>
+            <template class="speaker-template">
+              <h2>04 · Dva koncepty a propojení ekosystému</h2>
+              <p><strong>A = nyní:</strong> průvodce nákupem ojetého vozu. Klient získá checklist, rozpočet, doporučené kroky, možnost uložit si odkazy na vyhlédnutá auta, porovnávat je a využít prověření. ČSOB rozpozná potřebu dříve a může nabídnout relevantní produkty i auta po operativním leasingu.</p>
+              <p><strong>Jedna cesta, nikoli jedna appka:</strong> Veřejný web je vhodný pro dohledatelnost přes vyhledávání a AI odpovědi (SEO/GEO) i pro neklienty. DoKapsy může být kontextový ekosystémový vstup a místo návratů. ČSOB Smart může nabídnout bankovní návaznost. Konkrétní roli kanálů ověřit daty a technickými možnostmi. ČSOB už uvádí přechody mezi DoKapsy a Smart a ČSOB ID, ale sdílený nákupní plán je teprve návrh.</p>
+              <p><strong>Sauto / externí portály:</strong> V MVP stačí vložit odkaz na inzerát. Klient si vytvoří vlastní shortlist bez nutnosti provozovat další autobazar. Případná funkce „Sdílet“ může snížit počet kroků, ale závisí na technickém řešení. Automatická synchronizace oblíbených aut typu Steam ↔ Discord je až partnerská integrace, pokud existuje vhodné API, obchodní dohoda a souhlas klienta. Nezaměňovat inzertní importní API za API pro uživatelské oblíbené položky.</p>
+              <p><strong>ČSOB Leasing:</strong> Do shortlistu patří relevantní vozy z ČSOB Leasing vedle vozů od ostatních prodejců. Nepropagovat tříletá auta jako automaticky nejlepší volbu. Důležité jsou cena, historie, stav a celková vhodnost pro klienta.</p>
+              <p><strong>Proč sdílet informace?</strong> Za vyplnění krátkého průvodce musí klient získat hodnotu, například nákupní plán či rozpočet. Rozlišit nezbytné údaje, volitelné uložení a marketingové souhlasy. Klient může auto koupit kdekoli a nadále dostat pomoc.</p>
+              <p><strong>B = budoucí vize:</strong> Moje garáž inspirovaná Lloyds My Car. Staví na mobilitních službách DoKapsy, termínech STK, servisu, pojištění a jednoduchých údajích. V budoucnu může vytvořit kontext další obměny auta, ale následný provoz je mimo zadání. Proto ji nyní neupřednostňuji.</p>
+              <p><strong>Technické otázky:</strong> identita a oprávnění, sdílený datový model plánu, deeplinky, ochrana dat, analytika napříč kanály a kvalitní předávání partnerům. První test bez plné integrace.</p>
+            </template>
+          </section>
+
+          <!-- SLIDE 05 -->
+          <section class="slide slide--five" data-slide="5" aria-label="Slide 5 z 5: Hypotézy, experimenty a metriky" aria-hidden="true">
+            <div class="slide-inner slide-inner--five">
+              <header class="slide-heading slide-heading--tight">
+                <div class="kicker"><span class="kicker-line"></span> OVĚŘOVÁNÍ <span class="kicker-separator">/</span> IMPACT</div>
+                <div class="slide-counter" aria-label="Slide 5">05</div>
+                <h1>Ověřit hodnotu. <span class="accent">Měřit posun.</span></h1>
+                <p class="slide-subtitle">Testovat před investicí. Nehodnotit úspěch jen podle kliknutí nebo počtu leadů.</p>
+              </header>
+              <div class="hypothesis-header"><span class="mini-upper">HYPOTÉZY A EXPERIMENTY</span><span class="test-chip">DISCOVER → VALIDATE → PILOT</span></div>
+              <div class="hypothesis-grid">
+                <article class="hypothesis-card"><div class="hypothesis-top"><span>H1</span><span class="hypothesis-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12M8 3v7l-4 7a3 3 0 0 0 3 4h10a3 3 0 0 0 3-4l-4-7V3M7 15h10"/></svg></span></div><h2>Pomoc před produktem</h2><p>Klienti chtějí pomoc ještě před výběrem auta.</p><div class="hypothesis-meta"><span>TEST</span> Rozhovory + prototyp</div><div class="hypothesis-meta"><span>SIGNÁL</span> Užitečnost, jistota</div></article>
+                <article class="hypothesis-card"><div class="hypothesis-top"><span>H2</span><span class="hypothesis-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5 5l14 14"/></svg></span></div><h2>Hodnota za záměr</h2><p>Klienti dobrovolně sdělí potřebu výměnou za užitečný plán.</p><div class="hypothesis-meta"><span>TEST</span> Fake door + formulář</div><div class="hypothesis-meta"><span>SIGNÁL</span> Zájem, dokončení</div></article>
+                <article class="hypothesis-card"><div class="hypothesis-top"><span>H3</span><span class="hypothesis-icon"><svg viewBox="0 0 24 24"><path d="m12 3 8 4v6c0 5-3.4 7-8 9-4.6-2-8-4-8-9V7l8-4ZM8 12l3 3 5-6"/></svg></span></div><h2>Důvěryhodný výběr</h2><p>Shortlist a prověření pomáhají udělat lepší rozhodnutí.</p><div class="hypothesis-meta"><span>TEST</span> Shortlist + pilot</div><div class="hypothesis-meta"><span>SIGNÁL</span> Prověření, další krok</div></article>
+              </div>
+              <div class="kpi-header"><span class="mini-upper">KPI RÁMEC</span><span class="kpi-arrow">OD VČASNÉ POTŘEBY K MĚŘITELNÉ HODNOTĚ →</span></div>
+              <div class="kpi-grid">
+                <article class="kpi-card"><span class="kpi-number">01 / INTENT</span><h3>Rozpoznání potřeby</h3><ul><li>Dobrovolně deklarovaný záměr</li><li>Podíl zachycený před produktem</li><li>Předstih rozpoznání potřeby</li></ul></article>
+                <article class="kpi-card"><span class="kpi-number">02 / ENGAGEMENT</span><h3>Užitečné zapojení</h3><ul><li>Dokončené a uložené plány</li><li>Vybraná auta, checklist</li><li>Návraty a návaznost kanálů</li></ul></article>
+                <article class="kpi-card"><span class="kpi-number">03 / CUSTOMER VALUE</span><h3>Skutečný pokrok</h3><ul><li>Úspěšně dokončené kroky</li><li>Jistota a užitečnost</li><li>Dokončené prověření</li></ul></article>
+                <article class="kpi-card"><span class="kpi-number">04 / BUSINESS</span><h3>Udržitelný přínos</h3><ul><li>Kvalitní partnerské návaznosti</li><li>Vhodné financování / pojištění</li><li>Inkrementalita a náklady</li></ul></article>
+              </div>
+              <div class="northstar"><div class="northstar-icon"><svg viewBox="0 0 24 24"><path d="m12 2 3.2 6.8L23 12l-7.8 3.2L12 22l-3.2-6.8L1 12l7.8-3.2z"/></svg></div><div class="northstar-content"><span>NORTH STAR · PROGRESSION RATE</span><strong>Kolik klientů s nákupním záměrem udělá skutečný krok k nákupu?</strong></div><div class="northstar-side"><span>GUARDRAILS</span><small>Souhlas s daty · vhodnost produktů · kvalita partnerů</small></div></div>
+              <footer class="slide-footer slide-footer--final"><strong>Od nabídky produktů k partnerství při rozhodování.</strong><span>LEARN · ITERATE · SCALE / STOP</span></footer>
+            </div>
+            <template class="speaker-template">
+              <h2>05 · Hypotézy, experimenty a KPI</h2>
+              <p><strong>Princip:</strong> Chci vědět, zda pomáháme klientovi udělat smysluplný krok. Samotný počet kliknutí nebo leadů není konečný výsledek.</p>
+              <h3>Experimenty</h3>
+              <ol>
+                <li><strong>H1:</strong> první kvalitativní vlna přibližně 8–12 rozhovorů napříč nákupními situacemi. Nejdřív reálné chování, teprve pak test prototypu. Nejde o statistickou reprezentativitu.</li>
+                <li><strong>H2:</strong> fake door ve vhodných kanálech s transparentním vysvětlením, že služba se připravuje. Návaznost na užitečný obsah či pilot. Měřit další akce, ne pouze CTR.</li>
+                <li><strong>H3:</strong> jednoduchý pilot shortlistu a checklistu; měřit dokončené prověření a kvalitu návaznosti na partnera / ČSOB Leasing.</li>
+              </ol>
+              <p><strong>Doplňkový zdroj:</strong> krátký dobrovolný rozhovor přes bankéře s klienty, kteří řeší financování ojetého auta. Není reprezentativní pro ranou fázi.</p>
+              <h3>Čtyři vrstvy metrik</h3>
+              <ul>
+                <li><strong>Early intent:</strong> intent declaration rate = deklarace / relevantní oslovení; early intent share = záměry zachycené před produktem / známé záměry; lead time = předstih před žádostí o produkt.</li>
+                <li><strong>Engagement:</strong> guide activation, plan completion, saved plan rate, saved car rate, návraty v 7/30 dnech a pokračování cesty napříč kanály. Míru návratů interpretovat vzhledem k horizontu nákupu.</li>
+                <li><strong>Customer value:</strong> task success, změna jistoty před/po (confidence delta), perceived usefulness, verification completion a meaningful progression. Jistota není sama o sobě důkaz kvalitního nákupu.</li>
+                <li><strong>Business:</strong> qualified referral rate, partner handoff completion, relevantní zájem o ČSOB Leasing, vhodné financování a pojištění, incrementální příspěvek, cost per meaningful progression a kvalita partnerů.</li>
+              </ul>
+              <h3>North Star · Progression Rate</h3>
+              <p><strong>Definice:</strong> klienti s deklarovaným nákupním záměrem, kteří v předem stanoveném období provedli ověřitelný významný krok / všichni klienti příslušné kohorty s deklarovaným záměrem.</p>
+              <p>Příklady: dokončení finančního plánu, prověření kandidáta, objednání inspekce, relevantní pokračování k nákupu. Sledovat třeba 60 dní jako pracovní návrh, ale upravit podle plánovaného termínu a délky rozhodování. Pouhé kliknutí není významný krok.</p>
+              <h3>Co znamená úspěch?</h3>
+              <p>Nejprve ověřit potřebu → zájem → chování v pilotu → přírůstkový obchodní přínos. Konverzi nepřičítat automaticky službě, protože aktivní zájemci mohou být motivovanější už předem. Kde to jde, srovnat s kontrolní skupinou a stanovit baseline. Konkrétní cílová procenta až po prvních datech.</p>
+              <p><strong>Guardrails:</strong> transparentní práce s údaji, účelové a dobrovolné sdílení, oddělení personalizace od marketingového souhlasu, žádný nátlak na nevhodné půjčky, transparentní nabídky skupiny i partnerů, odpovědnost za kvalitu partnerské zkušenosti.</p>
+              <p><strong>Manažerské rozhodnutí:</strong> learn → validate → iterate → scale / stop. „Fail fast“ znamená včas odhalit špatný předpoklad, ne testovat povrchně.</p>
+              <p><strong>Závěr:</strong> Od nabídky produktů k partnerství při rozhodování.</p>
+            </template>
+          </section>
+        </div>
+      </div>
+      <div class="mobile-slide-label" id="mobileSlideLabel" aria-live="polite">01 / 05 · Jak bych postupoval?</div>
+    </main>
+
+    <nav class="controls" aria-label="Ovládání prezentace">
+      <div class="controls-left"><span class="nav-hint"><kbd>←</kbd><kbd>→</kbd> pro přepínání</span><span class="nav-dot" aria-hidden="true"></span><span id="slideName">Jak bych postupoval?</span></div>
+      <div class="slide-pagination" aria-label="Přejít na slide">
+        <button type="button" class="page-dot active" data-go="1" aria-label="Slide 1: Postup" aria-current="step"></button>
+        <button type="button" class="page-dot" data-go="2" aria-label="Slide 2: Klient"></button>
+        <button type="button" class="page-dot" data-go="3" aria-label="Slide 3: Journey"></button>
+        <button type="button" class="page-dot" data-go="4" aria-label="Slide 4: Koncepty"></button>
+        <button type="button" class="page-dot" data-go="5" aria-label="Slide 5: Validace a KPI"></button>
+      </div>
+      <div class="controls-right">
+        <button type="button" class="control-secondary" id="notesBtn" title="Poznámky prezentujícího (N)" aria-label="Otevřít poznámky prezentujícího" aria-expanded="false" aria-controls="notesPane"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Poznámky</span></button>
+        <button type="button" class="control-secondary" id="printBtn" title="Tisk / PDF" aria-label="Vytisknout pět slidů"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4V9h16v9h-2M6 15h12v6H6z"/></svg><span>PDF</span></button>
+        <button type="button" class="control-secondary" id="fullscreenBtn" title="Celá obrazovka (F)" aria-label="Přepnout celou obrazovku"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+        <span class="control-divider"></span>
+        <button type="button" class="arrow-btn" id="prevBtn" aria-label="Předchozí slide" title="Předchozí slide" disabled><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+        <span class="nav-count"><strong id="currentPage">01</strong> <span>/ 05</span></span>
+        <button type="button" class="arrow-btn arrow-btn--primary" id="nextBtn" aria-label="Další slide" title="Další slide"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+    </nav>
+  </div>
+
+  <aside class="notes-pane" id="notesPane" role="complementary" aria-label="Poznámky prezentujícího" aria-hidden="true">
+    <div class="notes-head"><div><span class="mini-upper">SPEAKER NOTES</span><h2>Co říct k tomuto slidu</h2></div><button type="button" class="close-button" id="closeNotes" aria-label="Zavřít poznámky">×</button></div>
+    <div class="notes-body" id="notesContent"></div>
+    <div class="notes-bottom">Klávesa <kbd>N</kbd> zapne / vypne poznámky.</div>
+  </aside>
+  <div class="notes-backdrop" id="notesBackdrop" hidden></div>
+
+  <dialog class="app-dialog" id="aboutDialog" aria-labelledby="aboutHeading">
+    <div class="dialog-head"><div><span class="mini-upper">TRANSPARENTNOST · METODIKA</span><h2 id="aboutHeading">Jak vznikla tato case study</h2></div><button type="button" class="close-button" data-close-dialog aria-label="Zavřít">×</button></div>
+    <div class="dialog-body">
+      <p class="dialog-lead">Tato prezentace je <strong>pracovní návrh</strong>, ne hotový výzkumný projekt. Rozlišuje veřejně dostupná fakta, designové hypotézy a možné budoucí integrace.</p>
+      <div class="method-grid"><div><span>01</span><strong>Kontext pro AI</strong><p>Zadání case study, popis pozice CX Manager a profesní kontext autora.</p></div><div><span>02</span><strong>Jak AI pomáhala</strong><p>Desk research, benchmark, strukturování, ideace, oponentura a tvorba prezentace.</p></div><div><span>03</span><strong>Lidská rozhodnutí</strong><p>Výběr priorit, framing, návrh konceptů, kritické posouzení a příprava k validaci.</p></div><div><span>04</span><strong>Co chybí ověřit</strong><p>Rozhovory s klienty, interní data, stakeholder buy-in, partnerství a technická proveditelnost.</p></div></div>
+      <p class="dialog-note"><strong>O AI konverzaci:</strong> Zadání výběrového řízení požaduje přiložit relevantní část AI konverzace. Tento web obsahuje metodiku a poznámky; samostatný záznam konverzace je vhodné odeslat jako přílohu.</p>
+      <div class="sources"><h3>Veřejné inspirační zdroje</h3><a href="https://www.csob.cz/mobilni-aplikace/dokapsy" target="_blank" rel="noopener noreferrer">DoKapsy · ČSOB ↗</a><a href="https://www.csob.cz/katalog-vyhod" target="_blank" rel="noopener noreferrer">Katalog výhod · ČSOB ↗</a><a href="https://autosalon.csobleasing.cz/" target="_blank" rel="noopener noreferrer">Autosalon · ČSOB Leasing ↗</a><a href="https://www.lloydsbank.com/help-guidance/everyday-banking/mobile-banking-app/manage-your-car.html" target="_blank" rel="noopener noreferrer">My Car · Lloyds Bank ↗</a></div>
+    </div>
+  </dialog>
+
+  <dialog class="app-dialog app-dialog--wide" id="flowDialog" aria-labelledby="flowHeading">
+    <div class="dialog-head"><div><span class="mini-upper">NÁVRH · NIKOLI EXISTUJÍCÍ INTEGRACE</span><h2 id="flowHeading">Jedna cesta napříč službami</h2></div><button type="button" class="close-button" data-close-dialog aria-label="Zavřít">×</button></div>
+    <div class="dialog-body">
+      <div class="flow-steps">
+        <div class="flow-step"><span>01</span><strong>Objevím pomoc</strong><p>Na webu hledám, jak bezpečně koupit ojeté auto.</p></div>
+        <div class="flow-step"><span>02</span><strong>Sestavím plán</strong><p>Rozpočet, potřeby, termín. Uložení je dobrovolné.</p></div>
+        <div class="flow-step"><span>03</span><strong>Přidám kandidáty</strong><p>Odkazy ze Sauto, dalších portálů či ČSOB Leasing.</p></div>
+        <div class="flow-step"><span>04</span><strong>Navážu v kanálu</strong><p>DoKapsy pro návrat, Smart pro relevantní bankovní služby.</p></div>
+        <div class="flow-step"><span>05</span><strong>Využiju partnera</strong><p>Prověření vozidla, nabídka auta, financování či pojištění.</p></div>
+      </div>
+      <div class="flow-bottom"><strong>MVP:</strong> uložený plán + odkazy na inzeráty. <strong>Další fáze:</strong> bezpečné sdílení kontextu, deeplinky, partnerská API a automatická synchronizace pouze při ověřené proveditelnosti a souhlasu.</div>
+    </div>
+  </dialog>
+
+  <div class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
