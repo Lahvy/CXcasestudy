@@ -240,10 +240,6 @@
   heading.className = 'discovery-cycle__title';
   heading.innerHTML = `<span class="discovery-cycle__symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14-5L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14 5l2-2"/><path d="M16 16h4v4"/></svg></span><strong>CONTINUOUS DISCOVERY</strong><span class="discovery-cycle__subtitle">iterace napříč celým procesem</span>`;
 
-  const feedback = document.createElement('div');
-  feedback.className = 'discovery-cycle__feedback';
-  feedback.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 10 4 15l5 5"/><path d="M4 15h11a5 5 0 0 0 0-10h-2"/></svg><strong>REFRAME &amp; RESTART</strong><span>Nové poznatky mohou změnit i původní zadání, framing a strategický záměr.</span><span class="discovery-cycle__back" aria-hidden="true">↶ ZPĚT K ALIGN &amp; FRAME</span>`;
-
   grid.before(frame);
-  frame.append(heading, grid, feedback);
+  frame.append(heading, grid);
 })();
