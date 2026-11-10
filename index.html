@@ -11,9 +11,43 @@
   <title>Nákup ojetého auta · CX case study</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cover.css">
   <script src="script.js" defer></script>
+  <script src="cover.js" defer></script>
 </head>
 <body>
+  <!-- Candidate cover. The five existing presentation slides remain unchanged. -->
+  <section class="case-cover" id="caseCover" aria-labelledby="caseCoverTitle">
+    <div class="case-cover__glow" aria-hidden="true"></div>
+    <div class="case-cover__ring" aria-hidden="true"></div>
+    <header class="case-cover__top">
+      <span class="case-cover__eyebrow">KANDIDÁTSKÁ PREZENTACE <span aria-hidden="true">/</span> CX &amp; EKOSFÉRA</span>
+      <div class="case-cover__brand" aria-label="ČSOB">
+        <!-- Logo: upload your file to /logo/csob-logo.png (fallback is text if absent). -->
+        <img class="case-cover__brand-image" src="logo/csob-logo.png" alt="ČSOB" decoding="async">
+        <span class="case-cover__brand-fallback" aria-hidden="true">ČSOB</span>
+      </div>
+    </header>
+    <div class="case-cover__main">
+      <!-- Portrait: upload your file to /photo/portrait.jpg (fallback is DH if absent). -->
+      <div class="case-cover__portrait" aria-label="Portrét autora">
+        <span class="case-cover__portrait-placeholder" aria-hidden="true">DH</span>
+        <img class="case-cover__portrait-image" src="photo/portrait.jpg" alt="Portrét Dominika Hlaváčka" decoding="async">
+      </div>
+      <p class="case-cover__author">DOMINIK HLAVÁČEK</p>
+      <h1 id="caseCoverTitle" class="case-cover__title">CX <span>Case Study</span></h1>
+      <p class="case-cover__topic">Nákup ojetého auta</p>
+      <p class="case-cover__tagline">Od první úvahy k informovanému rozhodnutí.</p>
+      <button class="case-cover__enter" type="button" id="enterPresentation">
+        <span>Přejít na prezentaci</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+      </button>
+    </div>
+    <footer class="case-cover__bottom">
+      <span>2026 <span class="case-cover__separator" aria-hidden="true">·</span> CX CASE STUDY</span>
+      <p>Neoficiální kandidátská case study pro výběrové řízení. Nejedná se o schválený projekt ani stanovisko ČSOB.</p>
+    </footer>
+  </section>
   <a class="skip-link" href="#presentation">Přejít na prezentaci</a>
   <div class="app-shell">
     <header class="app-bar" aria-label="Hlavička prezentace">
