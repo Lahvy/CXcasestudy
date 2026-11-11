@@ -11,11 +11,7 @@
   const SLIDE_HEIGHT = 810;
   const MOBILE_BREAKPOINT = 800;
   const slideTitles = [
-    'Jak bych postupoval?',
-    'Proč lidé kupují ojeté auto?',
-    'Kde může banka přinést hodnotu?',
-    'Dvě příležitosti pro ekosystém',
-    'Ověřit hodnotu. Měřit posun.'
+
   ];
 
   const slides = Array.from(document.querySelectorAll('.slide'));
