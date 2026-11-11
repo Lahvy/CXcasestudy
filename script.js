@@ -243,3 +243,67 @@
   grid.before(frame);
   frame.append(heading, grid);
 })();
+
+
+/* Slide 02 only: replace visual content with JTBD dimensions and move archetypes
+   to the original bottom bar. All other slides, speaker notes and copy stay intact. */
+(() => {
+  'use strict';
+  const slide = document.querySelector('.slide--two');
+  if (!slide || slide.querySelector('.jtbd-grid')) return;
+  const originalPanels = slide.querySelector('.motivation-grid');
+  const originalJobs = slide.querySelector('.jobs-area');
+  if (!originalPanels || !originalJobs) return;
+
+  const jobs = document.createElement('div');
+  jobs.className = 'jtbd-grid';
+  jobs.setAttribute('aria-label', 'Jobs to be done: funkční, emocionální a sociální úkoly');
+  jobs.innerHTML = `
+    <article class="jtbd-panel jtbd-panel--functional">
+      <header class="jtbd-panel__heading">
+        <span class="jtbd-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 16 2-7h12l2 7M7 9l2-4h6l2 4M6 16h12M6 19h.01M18 19h.01"/></svg></span>
+        <div><h2>Funkční úkoly</h2><p>Co potřebuji prakticky vyřešit?</p></div>
+      </header>
+      <ul class="jtbd-panel__list">
+        <li><strong>„Dopravit rodinu bezpečně a spolehlivě.“</strong><span>Prostor pro děti, kočárek i každodenní cesty.</span></li>
+        <li><strong>„Vyřešit mobilitu v rámci rozpočtu.“</strong><span>Pořizovací cena, rezerva a budoucí náklady.</span></li>
+        <li><strong>„Snížit riziko skrytých vad.“</strong><span>Prověření historie a odborná kontrola auta.</span></li>
+      </ul>
+    </article>
+    <article class="jtbd-panel jtbd-panel--emotional">
+      <header class="jtbd-panel__heading">
+        <span class="jtbd-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+        <div><h2>Emocionální úkoly</h2><p>Jak se chci během nákupu cítit?</p></div>
+      </header>
+      <ul class="jtbd-panel__list">
+        <li><strong>„Mít klid, že nekupuji problém.“</strong><span>Bez strachu z podvodu, havárie či skryté vady.</span></li>
+        <li><strong>„Vyhnout se stresu z vyjednávání.“</strong><span>Nemuset čelit nepříjemnému tlaku prodejce.</span></li>
+        <li><strong>„Cítit jistotu ve svém rozhodnutí.“</strong><span>Mít důvody věřit, že jsem koupil dobře.</span></li>
+      </ul>
+    </article>
+    <article class="jtbd-panel jtbd-panel--social">
+      <header class="jtbd-panel__heading">
+        <span class="jtbd-panel__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><path d="M2 20v-2a6 6 0 0 1 12 0v2M16.5 5.5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 5 5v1"/></svg></span>
+        <div><h2>Sociální úkoly</h2><p>Jak chci působit na své okolí?</p></div>
+      </header>
+      <ul class="jtbd-panel__list">
+        <li><strong>„Být zodpovědný v očích rodiny.“</strong><span>Vybrat auto, ve kterém budou blízcí v bezpečí.</span></li>
+        <li><strong>„Působit úspěšně, ale neutrácet zbytečně.“</strong><span>Najít rovnováhu mezi statusem a cenou.</span></li>
+      </ul>
+    </article>`;
+
+  const archetypes = document.createElement('div');
+  archetypes.className = 'archetype-bar';
+  archetypes.setAttribute('aria-label', 'Hypotetické behaviorální archetypy');
+  archetypes.innerHTML = `
+    <div class="archetype-bar__intro"><span class="mini-upper">BEHAVIORÁLNÍ ARCHETYPY</span><strong>Jak se rozhoduji?</strong></div>
+    <div class="archetype-bar__grid">
+      <div class="archetype-bar__item"><span class="archetype-bar__glyph">N</span><div><strong>Nováček</strong><small>„Nevím, kde začít.“</small></div></div>
+      <div class="archetype-bar__item"><span class="archetype-bar__glyph">P</span><div><strong>Pragmatik</strong><small>„Chci rozumnou koupi.“</small></div></div>
+      <div class="archetype-bar__item"><span class="archetype-bar__glyph">E</span><div><strong>Nadšenec</strong><small>„Vím, co hledám.“</small></div></div>
+      <div class="archetype-bar__item"><span class="archetype-bar__glyph">?</span><div><strong>Nejistý kupující</strong><small>„Jak poznám, že nenaletím?“</small></div></div>
+    </div>`;
+
+  originalPanels.replaceWith(jobs);
+  originalJobs.replaceWith(archetypes);
+})();
